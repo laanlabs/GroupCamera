@@ -20,12 +20,18 @@
     IBOutlet UILabel *              differenceLabel;
     IBOutlet UILabel *              countdownLabel;
 
-    
+    NSTimeInterval timeToTakePhoto;
+	BOOL photoCountdownStarted;
+	
+	
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *           window;
 @property (nonatomic, retain) IBOutlet ntpAViewController * viewController;
 
 - (void) repeatingMethod:(NSTimer*)theTimer;
+
+-(IBAction) snapPhotoClicked;
+-(IBAction) getFakeTimeFromServer;
 
 @end
