@@ -122,8 +122,19 @@
 	
 	UIImage * image = cameraCapturer.capturedImage;
 	NSLog(@"captured: %f , %f " , image.size.width, image.size.height );
+	//UIImageWriteToSavedPhotosAlbum(image, self, @selector(finishedSaving:), NULL);
+	UIImageWriteToSavedPhotosAlbum(image, self, @selector(imageSavedToPhotosAlbum: didFinishSavingWithError: contextInfo:), NULL);  
+	
 	
 }	
+
+- (void)imageSavedToPhotosAlbum:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
+
+	if ( error == nil ) {
+		NSLog(@"yay");
+	}
+	
+}
 
 -(IBAction) getFakeTimeFromServer {
 	

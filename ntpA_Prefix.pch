@@ -20,6 +20,9 @@
 #endif
 
 #define NTP_Logging(fmt, ...)
+#define LogInProduction(fmt, ...)
+/*
+#define NTP_Logging(fmt, ...)
 #define LogInProduction(fmt, ...) \
     NSLog((@"%@|" fmt), [NSString stringWithFormat: @"%24s", \
         [[[self class] description] UTF8String]], ##__VA_ARGS__)
@@ -31,3 +34,4 @@
         NSLog((@"%@|" fmt), [NSString stringWithFormat: @"%24s", \
         [[[self class] description] UTF8String]], ##__VA_ARGS__)
 #endif
+*/
