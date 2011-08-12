@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CameraCapturer.h"
 
 @class ntpAViewController;
 
@@ -22,7 +23,9 @@
 
     NSTimeInterval timeToTakePhoto;
 	BOOL photoCountdownStarted;
+	BOOL pendingFrameCapture;
 	
+	CameraCapturer * cameraCapturer;
 	
 }
 

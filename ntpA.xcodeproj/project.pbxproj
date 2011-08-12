@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		740635BB13F5DF76009A1B9C /* CameraCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */; };
+		740635BF13F5DFCE009A1B9C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740635BE13F5DFCE009A1B9C /* AVFoundation.framework */; };
+		740635C113F5DFCE009A1B9C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740635C013F5DFCE009A1B9C /* CoreMedia.framework */; };
+		740635C313F5DFCE009A1B9C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740635C213F5DFCE009A1B9C /* CoreVideo.framework */; };
+		740635C513F5DFCE009A1B9C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740635C413F5DFCE009A1B9C /* QuartzCore.framework */; };
 		8605D9A31290E9110036287D /* ntpAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8605D9A21290E9110036287D /* ntpAViewController.m */; };
 		8605D9BA1290E9600036287D /* ntpAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8605D9B81290E9600036287D /* ntpAViewController.xib */; };
 		86618F2A126BB6430046A2B8 /* NetworkClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 86618F29126BB6430046A2B8 /* NetworkClock.m */; };
@@ -24,6 +29,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		740635B913F5DF76009A1B9C /* CameraCapturer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCapturer.h; sourceTree = "<group>"; };
+		740635BA13F5DF76009A1B9C /* CameraCapturer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraCapturer.m; sourceTree = "<group>"; };
+		740635BE13F5DFCE009A1B9C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		740635C013F5DFCE009A1B9C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		740635C213F5DFCE009A1B9C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		740635C413F5DFCE009A1B9C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8605D9A11290E9110036287D /* ntpAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ntpAViewController.h; sourceTree = "<group>"; };
 		8605D9A21290E9110036287D /* ntpAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ntpAViewController.m; sourceTree = "<group>"; };
 		8605D9B91290E9600036287D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ntpAViewController.xib; sourceTree = "<group>"; };
@@ -58,6 +69,10 @@
 				8661907B126C0CEC0046A2B8 /* Foundation.framework in Frameworks */,
 				86619082126C0CFD0046A2B8 /* CoreGraphics.framework in Frameworks */,
 				86619086126C0D120046A2B8 /* CFNetwork.framework in Frameworks */,
+				740635BF13F5DFCE009A1B9C /* AVFoundation.framework in Frameworks */,
+				740635C113F5DFCE009A1B9C /* CoreMedia.framework in Frameworks */,
+				740635C313F5DFCE009A1B9C /* CoreVideo.framework in Frameworks */,
+				740635C513F5DFCE009A1B9C /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 			children = (
 				96D014FE13F5C66F00BFF857 /* AsyncUdpSocket.m */,
 				96D014FF13F5C66F00BFF857 /* AsyncUdpSocket.h */,
+				740635B913F5DF76009A1B9C /* CameraCapturer.h */,
+				740635BA13F5DF76009A1B9C /* CameraCapturer.m */,
 				86C39F1D126A1FA100A9DCD1 /* ntpAAppDelegate.h */,
 				86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */,
 				8605D9A11290E9110036287D /* ntpAViewController.h */,
@@ -118,6 +135,10 @@
 		86C39F08126A1FA100A9DCD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				740635BE13F5DFCE009A1B9C /* AVFoundation.framework */,
+				740635C013F5DFCE009A1B9C /* CoreMedia.framework */,
+				740635C213F5DFCE009A1B9C /* CoreVideo.framework */,
+				740635C413F5DFCE009A1B9C /* QuartzCore.framework */,
 				8661906E126C0CD70046A2B8 /* UIKit.framework */,
 				8661907A126C0CEC0046A2B8 /* Foundation.framework */,
 				86619081126C0CFD0046A2B8 /* CoreGraphics.framework */,
@@ -211,6 +232,7 @@
 				86E4C97B128242B800841647 /* NetAssociation.m in Sources */,
 				8605D9A31290E9110036287D /* ntpAViewController.m in Sources */,
 				96D0150013F5C66F00BFF857 /* AsyncUdpSocket.m in Sources */,
+				740635BB13F5DF76009A1B9C /* CameraCapturer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

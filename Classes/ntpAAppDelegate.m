@@ -24,6 +24,13 @@
 	
 	timeToTakePhoto = [NSDate timeIntervalSinceReferenceDate];
 	photoCountdownStarted = NO;
+	pendingFrameCapture = NO;
+	
+	cameraCapturer = [[CameraCapturer alloc] init];
+	//cameraCapturer.previewLayer;
+	[window.layer insertSublayer:cameraCapturer.previewLayer atIndex:1];
+	cameraCapturer.previewLayer.frame = window.bounds;
+	[cameraCapturer beginCapturingCamera];
 	
 /*┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
   │  Create a timer that will fire in ten seconds and then every ten seconds thereafter to ask the   │
@@ -102,8 +109,21 @@
 	
 	window.backgroundColor = [UIColor redColor];
 	[window performSelector:@selector(setBackgroundColor:) withObject:[UIColor whiteColor] afterDelay:0.3];
+	pendingFrameCapture = YES;
+	
+	[cameraCapturer capturePhoto];
+	
+	
+	[self performSelector:@selector(checkForImage) withObject:nil afterDelay:0.3];
 	
 }
+
+-(void) checkForImage {
+	
+	UIImage * image = cameraCapturer.capturedImage;
+	NSLog(@"captured: %f , %f " , image.size.width, image.size.height );
+	
+}	
 
 -(IBAction) getFakeTimeFromServer {
 	
