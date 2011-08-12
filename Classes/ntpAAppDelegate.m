@@ -44,6 +44,7 @@
     differenceLabel.text = [NSString stringWithFormat:@"%5.3f",
                             [networkTime timeIntervalSinceDate:systemTime]];
     
+	/*
     UInt64 mod = ([networkTime timeIntervalSinceReferenceDate]);
     
     if ( mod % 4 == 0 ) {
@@ -55,7 +56,7 @@
     } else {
         window.backgroundColor = [UIColor whiteColor];
     }
-    
+    */
     
 //    NSTimeInterval timePassed_ms = [networkTime timeIntervalSinceNow] * -1000.0;
 //    

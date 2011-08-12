@@ -18,7 +18,7 @@
     IBOutlet UILabel *              sysClockLabel;
     IBOutlet UILabel *              netClockLabel;
     IBOutlet UILabel *              differenceLabel;
-    IBOutlet UILabel *              millLabel;
+    IBOutlet UILabel *              countdownLabel;
 
     
 }
