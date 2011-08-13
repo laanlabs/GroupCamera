@@ -35,7 +35,8 @@
 	cameraCapturer = [[CameraCapturer alloc] init];
 	//cameraCapturer.previewLayer;
 	[window.layer insertSublayer:cameraCapturer.previewLayer atIndex:1];
-	cameraCapturer.previewLayer.frame = window.bounds;
+	//cameraCapturer.previewLayer.frame = window.bounds;
+	cameraCapturer.previewLayer.frame = CGRectMake(0, 90, 320, 480);
 	[cameraCapturer beginCapturingCamera];
 	
 	
@@ -107,7 +108,7 @@
 	}
 	
 	
-	/*
+	
     UInt64 mod = ([networkTime timeIntervalSinceReferenceDate]);
     
     if ( mod % 4 == 0 ) {
@@ -119,7 +120,7 @@
     } else {
         window.backgroundColor = [UIColor whiteColor];
     }
-    */
+    
     
 //    NSTimeInterval timePassed_ms = [networkTime timeIntervalSinceNow] * -1000.0;
 //    
