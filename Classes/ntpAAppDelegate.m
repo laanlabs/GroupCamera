@@ -184,7 +184,7 @@
 	
     NSTimeInterval millisecondedDate = ([[[NetworkClock sharedNetworkClock] networkTime] timeIntervalSinceReferenceDate]) + 6.0;
     
-    NSString* formattedMilliseconds = [NSString stringWithFormat:@"%.5f", millisecondedDate];
+    NSString* formattedMilliseconds = [NSString stringWithFormat:@"%.8f", millisecondedDate];
     
 	[req postTime:formattedMilliseconds];
 	
