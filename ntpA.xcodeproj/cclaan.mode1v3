@@ -266,6 +266,7 @@
 								<string>86C39EFE126A1FA000A9DCD1</string>
 								<string>86C39F06126A1FA100A9DCD1</string>
 								<string>86C39F05126A1FA000A9DCD1</string>
+								<string>7406371E13F600F7009A1B9C</string>
 								<string>86C39F07126A1FA100A9DCD1</string>
 								<string>86C39F20126A1FA100A9DCD1</string>
 								<string>86FFAD7B126AD22300F5B70C</string>
@@ -275,13 +276,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>15</integer>
+									<integer>16</integer>
 									<integer>11</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {235, 684}}</string>
+							<string>{{0, 0}, {235, 681}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -293,14 +294,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {252, 702}}</string>
+						<string>{{0, 0}, {252, 699}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
 							<real>235</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>0 135 1440 743 0 0 1440 878 </string>
+						<string>4 138 1440 740 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -318,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CameraCapturer.m</string>
+								<string>ntpAAppDelegate.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,23 +327,28 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>CameraCapturer.m</string>
+										<string>ntpAAppDelegate.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>740636F913F5F6A2009A1B9C</string>
+										<string>7406378313F60344009A1B9C</string>
 										<key>history</key>
 										<array>
 											<string>7406358C13F5DACE009A1B9C</string>
 											<string>7406359613F5DBA5009A1B9C</string>
 											<string>740636C413F5F446009A1B9C</string>
-											<string>740636F013F5F6A2009A1B9C</string>
 											<string>740636F113F5F6A2009A1B9C</string>
-											<string>740636F213F5F6A2009A1B9C</string>
 											<string>740636F313F5F6A2009A1B9C</string>
 											<string>740636F413F5F6A2009A1B9C</string>
 											<string>740636F613F5F6A2009A1B9C</string>
-											<string>740636F813F5F6A2009A1B9C</string>
+											<string>7406373413F60150009A1B9C</string>
+											<string>7406373513F60150009A1B9C</string>
+											<string>7406377E13F60344009A1B9C</string>
+											<string>7406377F13F60344009A1B9C</string>
+											<string>7406378013F60344009A1B9C</string>
+											<string>7406378113F60344009A1B9C</string>
+											<string>7406378213F60344009A1B9C</string>
+											<string>740636F013F5F6A2009A1B9C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -354,14 +360,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1183, 547}}</string>
+								<string>{{0, 0}, {1183, 545}}</string>
 								<key>RubberWindowFrame</key>
-								<string>0 135 1440 743 0 0 1440 878 </string>
+								<string>4 138 1440 740 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>547pt</string>
+							<string>545pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -374,14 +380,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 552}, {1183, 150}}</string>
+								<string>{{0, 550}, {1183, 149}}</string>
 								<key>RubberWindowFrame</key>
-								<string>0 135 1440 743 0 0 1440 878 </string>
+								<string>4 138 1440 740 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>150pt</string>
+							<string>149pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -540,17 +546,17 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>740636FA13F5F6A2009A1B9C</string>
+		<string>7406378413F60344009A1B9C</string>
 		<string>7406363813F5E198009A1B9C</string>
 		<string>7406363113F5E129009A1B9C</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>7406358613F5D9D8009A1B9C</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/cclaan/projects/iphone/GroupCamera/ntpA.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>0 135 1440 743 0 0 1440 878 </string>
+	<string>4 138 1440 740 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -571,7 +577,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CameraCapturer.m</string>
+								<string>AudioOutputUnit.mm</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -923,7 +929,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

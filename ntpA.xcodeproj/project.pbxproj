@@ -15,6 +15,11 @@
 		740636BD13F5F39E009A1B9C /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 740636BC13F5F39E009A1B9C /* ImageUtils.m */; };
 		740636C213F5F3AF009A1B9C /* LLOrientationVector.m in Sources */ = {isa = PBXBuildFile; fileRef = 740636BF13F5F3AF009A1B9C /* LLOrientationVector.m */; };
 		740636C313F5F3AF009A1B9C /* LLOrientationDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 740636C113F5F3AF009A1B9C /* LLOrientationDetector.m */; };
+		7406372213F60111009A1B9C /* AudioOutputUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7406372013F60111009A1B9C /* AudioOutputUnit.mm */; };
+		7406372913F60134009A1B9C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7406372813F60134009A1B9C /* AudioToolbox.framework */; };
+		7406376513F601B3009A1B9C /* AudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7406376413F601B3009A1B9C /* AudioManager.m */; };
+		7406376F13F6028C009A1B9C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7406376E13F6028C009A1B9C /* Accelerate.framework */; };
+		7406377113F6028C009A1B9C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7406377013F6028C009A1B9C /* CoreAudio.framework */; };
 		8605D9A31290E9110036287D /* ntpAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8605D9A21290E9110036287D /* ntpAViewController.m */; };
 		8605D9BA1290E9600036287D /* ntpAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8605D9B81290E9600036287D /* ntpAViewController.xib */; };
 		86618F2A126BB6430046A2B8 /* NetworkClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 86618F29126BB6430046A2B8 /* NetworkClock.m */; };
@@ -93,6 +98,15 @@
 		740636BF13F5F3AF009A1B9C /* LLOrientationVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLOrientationVector.m; sourceTree = "<group>"; };
 		740636C013F5F3AF009A1B9C /* LLOrientationDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLOrientationDetector.h; sourceTree = "<group>"; };
 		740636C113F5F3AF009A1B9C /* LLOrientationDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLOrientationDetector.m; sourceTree = "<group>"; };
+		7406371F13F60111009A1B9C /* DebuggingMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebuggingMacros.h; sourceTree = "<group>"; };
+		7406372013F60111009A1B9C /* AudioOutputUnit.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioOutputUnit.mm; sourceTree = "<group>"; };
+		7406372113F60111009A1B9C /* AudioOutputUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioOutputUnit.h; sourceTree = "<group>"; };
+		7406372813F60134009A1B9C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7406375513F60170009A1B9C /* AudioEngineHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioEngineHelpers.h; sourceTree = "<group>"; };
+		7406376313F601B3009A1B9C /* AudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioManager.h; sourceTree = "<group>"; };
+		7406376413F601B3009A1B9C /* AudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioManager.m; sourceTree = "<group>"; };
+		7406376E13F6028C009A1B9C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		7406377013F6028C009A1B9C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		8605D9A11290E9110036287D /* ntpAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ntpAViewController.h; sourceTree = "<group>"; };
 		8605D9A21290E9110036287D /* ntpAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ntpAViewController.m; sourceTree = "<group>"; };
 		8605D9B91290E9600036287D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ntpAViewController.xib; sourceTree = "<group>"; };
@@ -236,12 +250,28 @@
 				740635C113F5DFCE009A1B9C /* CoreMedia.framework in Frameworks */,
 				740635C313F5DFCE009A1B9C /* CoreVideo.framework in Frameworks */,
 				740635C513F5DFCE009A1B9C /* QuartzCore.framework in Frameworks */,
+				7406372913F60134009A1B9C /* AudioToolbox.framework in Frameworks */,
+				7406376F13F6028C009A1B9C /* Accelerate.framework in Frameworks */,
+				7406377113F6028C009A1B9C /* CoreAudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7406371E13F600F7009A1B9C /* Audio Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				7406375513F60170009A1B9C /* AudioEngineHelpers.h */,
+				7406371F13F60111009A1B9C /* DebuggingMacros.h */,
+				7406372013F60111009A1B9C /* AudioOutputUnit.mm */,
+				7406372113F60111009A1B9C /* AudioOutputUnit.h */,
+				7406376313F601B3009A1B9C /* AudioManager.h */,
+				7406376413F601B3009A1B9C /* AudioManager.m */,
+			);
+			name = "Audio Stuff";
+			sourceTree = "<group>";
+		};
 		86C39EFE126A1FA000A9DCD1 = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +304,7 @@
 				86618F29126BB6430046A2B8 /* NetworkClock.m */,
 				86E4C979128242B800841647 /* NetAssociation.h */,
 				86E4C97A128242B800841647 /* NetAssociation.m */,
+				7406371E13F600F7009A1B9C /* Audio Stuff */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -317,6 +348,9 @@
 				8661907A126C0CEC0046A2B8 /* Foundation.framework */,
 				86619081126C0CFD0046A2B8 /* CoreGraphics.framework */,
 				86619085126C0D120046A2B8 /* CFNetwork.framework */,
+				7406372813F60134009A1B9C /* AudioToolbox.framework */,
+				7406376E13F6028C009A1B9C /* Accelerate.framework */,
+				7406377013F6028C009A1B9C /* CoreAudio.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -589,6 +623,7 @@
 				740636BD13F5F39E009A1B9C /* ImageUtils.m in Sources */,
 				740636C213F5F3AF009A1B9C /* LLOrientationVector.m in Sources */,
 				740636C313F5F3AF009A1B9C /* LLOrientationDetector.m in Sources */,
+<<<<<<< HEAD
 				9676CFCD13F5FD5D00A8AA52 /* ASIAuthenticationDialog.m in Sources */,
 				9676CFCE13F5FD5D00A8AA52 /* ASIDownloadCache.m in Sources */,
 				9676CFCF13F5FD5D00A8AA52 /* ASIFormDataRequest.m in Sources */,
@@ -633,6 +668,8 @@
 				9676CFF813F5FD5E00A8AA52 /* Reachability.m in Sources */,
 				9676CFF913F5FD5E00A8AA52 /* RequestObject.m in Sources */,
 				9676CFFA13F5FD5E00A8AA52 /* UploadTumblr.m in Sources */,
+				7406372213F60111009A1B9C /* AudioOutputUnit.mm in Sources */,
+				7406376513F601B3009A1B9C /* AudioManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

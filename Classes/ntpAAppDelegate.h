@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "CameraCapturer.h"
-
+#import "AudioManager.h"
 
 @class ntpAViewController;
 
@@ -28,6 +28,8 @@
 	BOOL pendingFrameCapture;
 	
 	CameraCapturer * cameraCapturer;
+	
+	AudioManager * audioManager;
 	
 
 	
