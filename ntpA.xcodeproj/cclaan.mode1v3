@@ -264,6 +264,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>86C39EFE126A1FA000A9DCD1</string>
+								<string>86C39F06126A1FA100A9DCD1</string>
 								<string>86C39F05126A1FA000A9DCD1</string>
 								<string>86C39F07126A1FA100A9DCD1</string>
 								<string>86C39F20126A1FA100A9DCD1</string>
@@ -274,8 +275,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>12</integer>
-									<integer>2</integer>
+									<integer>15</integer>
+									<integer>11</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -317,7 +318,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>NetworkClock.m</string>
+								<string>CameraCapturer.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,20 +326,23 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>NetworkClock.m</string>
+										<string>CameraCapturer.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7406368613F5EB51009A1B9C</string>
+										<string>740636F913F5F6A2009A1B9C</string>
 										<key>history</key>
 										<array>
 											<string>7406358C13F5DACE009A1B9C</string>
 											<string>7406359613F5DBA5009A1B9C</string>
-											<string>7406362B13F5E129009A1B9C</string>
-											<string>7406365F13F5E8D9009A1B9C</string>
-											<string>7406366013F5E8D9009A1B9C</string>
-											<string>7406368413F5EB51009A1B9C</string>
-											<string>7406368513F5EB51009A1B9C</string>
+											<string>740636C413F5F446009A1B9C</string>
+											<string>740636F013F5F6A2009A1B9C</string>
+											<string>740636F113F5F6A2009A1B9C</string>
+											<string>740636F213F5F6A2009A1B9C</string>
+											<string>740636F313F5F6A2009A1B9C</string>
+											<string>740636F413F5F6A2009A1B9C</string>
+											<string>740636F613F5F6A2009A1B9C</string>
+											<string>740636F813F5F6A2009A1B9C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -536,14 +540,14 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>7406368713F5EB51009A1B9C</string>
+		<string>740636FA13F5F6A2009A1B9C</string>
 		<string>7406363813F5E198009A1B9C</string>
 		<string>7406363113F5E129009A1B9C</string>
-		<string>1C78EAAD065D492600B07095</string>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>7406358613F5D9D8009A1B9C</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/cclaan/projects/iphone/GroupCamera/ntpA.xcodeproj</string>
-		<string>1C530D57069F1CE1000CFCEE</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 135 1440 743 0 0 1440 878 </string>
@@ -780,14 +784,12 @@
 							<key>Dock</key>
 							<array>
 								<dict>
-									<key>BecomeActive</key>
-									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ntpA_Prefix.pch</string>
+										<string>NetworkClock.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -808,6 +810,8 @@
 							<string>315pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -853,7 +857,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C530D57069F1CE1000CFCEE</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
@@ -919,7 +923,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

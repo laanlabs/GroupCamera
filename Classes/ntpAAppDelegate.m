@@ -32,6 +32,11 @@
 	cameraCapturer.previewLayer.frame = window.bounds;
 	[cameraCapturer beginCapturingCamera];
 	
+	
+	
+	
+	
+	
 /*┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
   │  Create a timer that will fire in ten seconds and then every ten seconds thereafter to ask the   │
   │ network clock what time it is.                                                                   │
@@ -146,7 +151,6 @@
 -(IBAction) snapPhotoClicked {
 	
 }
-
 
 
 - (void)applicationWillTerminate:(UIApplication *)application {

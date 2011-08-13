@@ -27,6 +27,14 @@
 		[self addVideoPreviewLayer];
 		[self beginCapturingCamera];
 		
+		currentDeviceOrientation = -1;
+		
+		orientationDetector = [[LLOrientationDetector alloc] init];
+		orientationDetector.delegate = self;
+		[orientationDetector startReceivingUpdates];
+	
+		
+		
 	}
 	return self;
 }
@@ -126,7 +134,32 @@
 	if ( self.waitingForCapture ) { 
 		
 		CGImageRef cgImage = [self imageFromSampleBuffer:sampleBuffer];
-		self.capturedImage = [UIImage imageWithCGImage: cgImage ];
+		
+		UIDeviceOrientation o = [LLOrientationDetector deviceOrientation];
+		UIImageOrientation imageOrient = -1;
+		
+		switch (o) {
+			case UIDeviceOrientationPortrait:
+				imageOrient = UIImageOrientationRight;
+				break;
+			case UIDeviceOrientationPortraitUpsideDown:
+				imageOrient = UIImageOrientationLeft;
+				break;
+			case UIDeviceOrientationLandscapeLeft:
+				imageOrient = UIImageOrientationUp;
+				break;
+			case UIDeviceOrientationLandscapeRight:
+				imageOrient = UIImageOrientationDown;
+				break;
+			case UIDeviceOrientationUnknown:
+				imageOrient = UIImageOrientationRight;
+				break;
+			default:
+				break;
+		}
+		
+		self.capturedImage = [UIImage imageWithCGImage:cgImage scale:2.0 orientation:imageOrient];
+		
 		CGImageRelease( cgImage );
 		NSLog(@"captured photo");
 		self.waitingForCapture = NO;
@@ -168,6 +201,26 @@
 	
 	return self.capturedImage;
 	*/
+}
+
+
+#pragma mark -
+#pragma mark LLOrientationDetectorDelegate
+
+-(void) deviceOrientationDidChange:(LLOrientationDetector*)detector {
+	
+	// using interface orientation since it hides face up / face down
+	//[self updateOrientationImages:YES];
+	
+	
+}
+// dont need both of these vvv ^^^
+-(void) interfaceOrientationDidChange:(LLOrientationDetector*)detector {
+	
+	NSLog(@"Orientation!");
+	//[self updateOrientationImages:YES];
+	
+	
 }
 
 
