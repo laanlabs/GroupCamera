@@ -168,6 +168,7 @@
 
 -(IBAction) snapPhotoClicked {
 	
+    [self postServerTime];
 }
 
 #pragma mark network start -
@@ -175,16 +176,16 @@
 - (IBAction) postServerTime {
     
     
-//	TimeServer * req = [[TimeServer alloc] init];
-//	req.delegate = self;	
-//	req.onSuccess = @selector(postTimeSuccess:);
-//	req.onFail = @selector(postTimeFail:);
-//	
-//    NSTimeInterval millisecondedDate = ([[[NetworkClock sharedNetworkClock] networkTime] timeIntervalSince1970] * 1000) + 5000;
-//    
-//    NSString* formattedMilliseconds = [NSString stringWithFormat:@"%.0f", millisecondedDate];
-//    
-//	[req postTime:formattedMilliseconds];
+	PictureTimeServer * req = [[PictureTimeServer alloc] init];
+	req.delegate = self;	
+	req.onSuccess = @selector(postTimeSuccess:);
+	req.onFail = @selector(postTimeFail:);
+	
+    NSTimeInterval millisecondedDate = ([[[NetworkClock sharedNetworkClock] networkTime] timeIntervalSinceReferenceDate]) + 6.0;
+    
+    NSString* formattedMilliseconds = [NSString stringWithFormat:@"%.5f", millisecondedDate];
+    
+	[req postTime:formattedMilliseconds];
 	
     
     
@@ -219,6 +220,13 @@
 
 -(void) readTimeSuccess:(id) response 
 {
+    
+    
+    timeToTakePhoto = [NSDate timeIntervalSinceReferenceDate] + 6.0;
+
+    NSLog(@"RESPONSE: %@", response);
+    
+    timeToTakePhoto = [response doubleValue];
     
 }
 

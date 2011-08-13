@@ -6,7 +6,7 @@
 //  Copyright 2011 Ramsay Consulting. All rights reserved.
 //
 
-#import "TimeServer.h"
+#import "PictureTimeServer.h"
 
 
 #define TIMESERVER_BASE_URL @"http://labs.laan.com/projects/iPhone/GroupCamera/"
@@ -92,7 +92,7 @@
 - (void)readTimeSucces:(ASIHTTPRequest *)asrequest
 {
 	NSString *response = [asrequest responseString];
-	NSLog(@"RESPONSE: %@", response);
+	//NSLog(@"RESPONSE: %@", response);
 	
 		
 		
