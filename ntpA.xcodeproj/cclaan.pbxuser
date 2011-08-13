@@ -65,7 +65,7 @@
 		fRef = 86C39F1D126A1FA100A9DCD1 /* ntpAAppDelegate.h */;
 		name = "ntpAAppDelegate.h: 21";
 		rLen = 14;
-		rLoc = 586;
+		rLoc = 587;
 		rType = 0;
 		vrLen = 743;
 		vrLoc = 37;
@@ -85,7 +85,7 @@
 		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
 		name = "ntpAAppDelegate.m: 70";
 		rLen = 28;
-		rLoc = 4850;
+		rLoc = 4860;
 		rType = 0;
 		vrLen = 969;
 		vrLoc = 2215;
@@ -95,7 +95,7 @@
 		fRef = 86C39F1D126A1FA100A9DCD1 /* ntpAAppDelegate.h */;
 		name = "ntpAAppDelegate.h: 21";
 		rLen = 14;
-		rLoc = 586;
+		rLoc = 587;
 		rType = 0;
 		vrLen = 780;
 		vrLoc = 0;
@@ -105,7 +105,7 @@
 		fRef = 86C39F1D126A1FA100A9DCD1 /* ntpAAppDelegate.h */;
 		name = "ntpAAppDelegate.h: 30";
 		rLen = 0;
-		rLoc = 991;
+		rLoc = 995;
 		rType = 0;
 		vrLen = 810;
 		vrLoc = 0;
@@ -115,7 +115,7 @@
 		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
 		name = "ntpAAppDelegate.m: 77";
 		rLen = 0;
-		rLoc = 4778;
+		rLoc = 4788;
 		rType = 0;
 		vrLen = 812;
 		vrLoc = 2500;
@@ -125,7 +125,7 @@
 		fRef = 86C39F1D126A1FA100A9DCD1 /* ntpAAppDelegate.h */;
 		name = "ntpAAppDelegate.h: 23";
 		rLen = 15;
-		rLoc = 622;
+		rLoc = 623;
 		rType = 0;
 		vrLen = 843;
 		vrLoc = 0;
@@ -135,7 +135,7 @@
 		fRef = 86C39F1D126A1FA100A9DCD1 /* ntpAAppDelegate.h */;
 		name = "ntpAAppDelegate.h: 23";
 		rLen = 15;
-		rLoc = 622;
+		rLoc = 623;
 		rType = 0;
 		vrLen = 873;
 		vrLoc = 0;
@@ -145,7 +145,7 @@
 		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
 		name = "ntpAAppDelegate.m: 75";
 		rLen = 21;
-		rLoc = 4751;
+		rLoc = 4761;
 		rType = 0;
 		vrLen = 876;
 		vrLoc = 2435;
@@ -155,7 +155,7 @@
 		fRef = 86C39F1D126A1FA100A9DCD1 /* ntpAAppDelegate.h */;
 		name = "ntpAAppDelegate.h: 34";
 		rLen = 0;
-		rLoc = 969;
+		rLoc = 973;
 		rType = 0;
 		vrLen = 887;
 		vrLoc = 0;
@@ -165,7 +165,7 @@
 		fRef = 86C39F1D126A1FA100A9DCD1 /* ntpAAppDelegate.h */;
 		name = "ntpAAppDelegate.h: 33";
 		rLen = 0;
-		rLoc = 926;
+		rLoc = 930;
 		rType = 0;
 		vrLen = 909;
 		vrLoc = 0;
@@ -175,7 +175,7 @@
 		fRef = 86C39F1D126A1FA100A9DCD1 /* ntpAAppDelegate.h */;
 		name = "ntpAAppDelegate.h: 33";
 		rLen = 0;
-		rLoc = 926;
+		rLoc = 930;
 		rType = 0;
 		vrLen = 909;
 		vrLoc = 0;
@@ -185,7 +185,7 @@
 		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
 		name = "ntpAAppDelegate.m: 75";
 		rLen = 21;
-		rLoc = 4751;
+		rLoc = 4761;
 		rType = 0;
 		vrLen = 876;
 		vrLoc = 2435;
@@ -195,7 +195,7 @@
 		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
 		name = "ntpAAppDelegate.m: 77";
 		rLen = 15;
-		rLoc = 4778;
+		rLoc = 4788;
 		rType = 0;
 		vrLen = 927;
 		vrLoc = 2435;
@@ -205,7 +205,7 @@
 		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
 		name = "ntpAAppDelegate.m: 56";
 		rLen = 0;
-		rLoc = 2814;
+		rLoc = 2824;
 		rType = 0;
 		vrLen = 1015;
 		vrLoc = 1987;
@@ -215,7 +215,7 @@
 		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
 		name = "ntpAAppDelegate.m: 87";
 		rLen = 0;
-		rLoc = 4776;
+		rLoc = 4786;
 		rType = 0;
 		vrLen = 818;
 		vrLoc = 2776;
@@ -242,7 +242,7 @@
 		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
 		name = "ntpAAppDelegate.m: 58";
 		rLen = 0;
-		rLoc = 2913;
+		rLoc = 2923;
 		rType = 0;
 		vrLen = 1117;
 		vrLoc = 2036;
@@ -252,7 +252,7 @@
 		fRef = 86C39F1D126A1FA100A9DCD1 /* ntpAAppDelegate.h */;
 		name = "ntpAAppDelegate.h: 24";
 		rLen = 21;
-		rLoc = 645;
+		rLoc = 646;
 		rType = 0;
 		vrLen = 910;
 		vrLoc = 0;
@@ -272,7 +272,7 @@
 		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
 		name = "ntpAAppDelegate.m: 61";
 		rLen = 0;
-		rLoc = 3064;
+		rLoc = 3074;
 		rType = 0;
 		vrLen = 1103;
 		vrLoc = 2017;
@@ -282,7 +282,7 @@
 		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
 		name = "ntpAAppDelegate.m: 105";
 		rLen = 0;
-		rLoc = 4196;
+		rLoc = 4206;
 		rType = 0;
 		vrLen = 1002;
 		vrLoc = 2166;
@@ -292,23 +292,23 @@
 		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
 		name = "ntpAAppDelegate.m: 110";
 		rLen = 0;
-		rLoc = 4839;
+		rLoc = 4849;
 		rType = 0;
 		vrLen = 683;
 		vrLoc = 3519;
 	};
 	740635B913F5DF76009A1B9C /* CameraCapturer.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1122, 490}}";
-			sepNavSelRange = "{447, 13}";
-			sepNavVisRange = "{0, 719}";
+			sepNavIntBoundsRect = "{{0, 0}, {1122, 507}}";
+			sepNavSelRange = "{591, 0}";
+			sepNavVisRange = "{0, 849}";
 		};
 	};
 	740635BA13F5DF76009A1B9C /* CameraCapturer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1118, 2535}}";
-			sepNavSelRange = "{2450, 0}";
-			sepNavVisRange = "{2526, 512}";
+			sepNavIntBoundsRect = "{{0, 0}, {1122, 2912}}";
+			sepNavSelRange = "{3925, 0}";
+			sepNavVisRange = "{3125, 928}";
 		};
 	};
 	7406362513F5E10E009A1B9C /* XCBuildMessageTextBookmark */ = {
@@ -317,7 +317,7 @@
 		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 110;
+		rLoc = 118;
 		rType = 1;
 	};
 	7406362613F5E10E009A1B9C /* PBXTextBookmark */ = {
@@ -325,7 +325,7 @@
 		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
 		name = "CameraCapturer.m: 111";
 		rLen = 0;
-		rLoc = 2450;
+		rLoc = 2642;
 		rType = 0;
 		vrLen = 393;
 		vrLoc = 2237;
@@ -335,7 +335,7 @@
 		fRef = 86C39F1D126A1FA100A9DCD1 /* ntpAAppDelegate.h */;
 		name = "ntpAAppDelegate.h: 28";
 		rLen = 14;
-		rLoc = 715;
+		rLoc = 716;
 		rType = 0;
 		vrLen = 998;
 		vrLoc = 0;
@@ -355,7 +355,7 @@
 		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
 		name = "CameraCapturer.m: 111";
 		rLen = 35;
-		rLoc = 2427;
+		rLoc = 2619;
 		rType = 0;
 		vrLen = 904;
 		vrLoc = 2067;
@@ -425,7 +425,7 @@
 		fRef = 740635B913F5DF76009A1B9C /* CameraCapturer.h */;
 		name = "CameraCapturer.h: 28";
 		rLen = 21;
-		rLoc = 691;
+		rLoc = 821;
 		rType = 0;
 		vrLen = 605;
 		vrLoc = 0;
@@ -435,7 +435,7 @@
 		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
 		name = "CameraCapturer.m: 56";
 		rLen = 0;
-		rLoc = 976;
+		rLoc = 1168;
 		rType = 0;
 		vrLen = 968;
 		vrLoc = 384;
@@ -445,7 +445,7 @@
 		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
 		name = "CameraCapturer.m: 149";
 		rLen = 0;
-		rLoc = 2704;
+		rLoc = 2896;
 		rType = 0;
 		vrLen = 631;
 		vrLoc = 3205;
@@ -455,7 +455,7 @@
 		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
 		name = "CameraCapturer.m: 128";
 		rLen = 0;
-		rLoc = 3040;
+		rLoc = 3861;
 		rType = 0;
 		vrLen = 1780;
 		vrLoc = 2398;
@@ -465,7 +465,7 @@
 		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
 		name = "CameraCapturer.m: 130";
 		rLen = 0;
-		rLoc = 3194;
+		rLoc = 4050;
 		rType = 0;
 		vrLen = 1601;
 		vrLoc = 2638;
@@ -475,7 +475,7 @@
 		fRef = 740635B913F5DF76009A1B9C /* CameraCapturer.h */;
 		name = "CameraCapturer.h: 28";
 		rLen = 21;
-		rLoc = 691;
+		rLoc = 821;
 		rType = 0;
 		vrLen = 605;
 		vrLoc = 0;
@@ -485,7 +485,7 @@
 		fRef = 740635B913F5DF76009A1B9C /* CameraCapturer.h */;
 		name = "CameraCapturer.h: 24";
 		rLen = 0;
-		rLoc = 585;
+		rLoc = 715;
 		rType = 0;
 		vrLen = 642;
 		vrLoc = 0;
@@ -495,7 +495,7 @@
 		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
 		name = "CameraCapturer.m: 169";
 		rLen = 0;
-		rLoc = 4493;
+		rLoc = 5349;
 		rType = 0;
 		vrLen = 1202;
 		vrLoc = 3259;
@@ -505,7 +505,7 @@
 		fRef = 740635B913F5DF76009A1B9C /* CameraCapturer.h */;
 		name = "CameraCapturer.h: 27";
 		rLen = 13;
-		rLoc = 615;
+		rLoc = 745;
 		rType = 0;
 		vrLen = 723;
 		vrLoc = 0;
@@ -525,7 +525,7 @@
 		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
 		name = "ntpAAppDelegate.m: 115";
 		rLen = 0;
-		rLoc = 4112;
+		rLoc = 4122;
 		rType = 0;
 		vrLen = 962;
 		vrLoc = 3384;
@@ -535,7 +535,7 @@
 		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
 		name = "ntpAAppDelegate.m: 115";
 		rLen = 0;
-		rLoc = 4112;
+		rLoc = 4122;
 		rType = 0;
 		vrLen = 966;
 		vrLoc = 3384;
@@ -545,7 +545,7 @@
 		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
 		name = "CameraCapturer.m: 169";
 		rLen = 0;
-		rLoc = 4493;
+		rLoc = 5349;
 		rType = 0;
 		vrLen = 1319;
 		vrLoc = 3142;
@@ -575,7 +575,7 @@
 		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
 		name = "CameraCapturer.m: 160";
 		rLen = 0;
-		rLoc = 4315;
+		rLoc = 5171;
 		rType = 0;
 		vrLen = 1205;
 		vrLoc = 3317;
@@ -585,7 +585,7 @@
 		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
 		name = "CameraCapturer.m: 160";
 		rLen = 0;
-		rLoc = 4315;
+		rLoc = 5171;
 		rType = 0;
 		vrLen = 1207;
 		vrLoc = 3315;
@@ -595,7 +595,7 @@
 		fRef = 740635B913F5DF76009A1B9C /* CameraCapturer.h */;
 		name = "CameraCapturer.h: 21";
 		rLen = 13;
-		rLoc = 447;
+		rLoc = 481;
 		rType = 0;
 		vrLen = 719;
 		vrLoc = 0;
@@ -605,7 +605,7 @@
 		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
 		name = "ntpAAppDelegate.m: 115";
 		rLen = 0;
-		rLoc = 4112;
+		rLoc = 4122;
 		rType = 0;
 		vrLen = 966;
 		vrLoc = 3384;
@@ -615,7 +615,7 @@
 		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
 		name = "ntpAAppDelegate.m: 122";
 		rLen = 0;
-		rLoc = 4225;
+		rLoc = 4235;
 		rType = 0;
 		vrLen = 880;
 		vrLoc = 3701;
@@ -625,7 +625,7 @@
 		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
 		name = "ntpAAppDelegate.m: 133";
 		rLen = 0;
-		rLoc = 4713;
+		rLoc = 4723;
 		rType = 0;
 		vrLen = 972;
 		vrLoc = 3875;
@@ -635,7 +635,7 @@
 		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
 		name = "CameraCapturer.m: 111";
 		rLen = 0;
-		rLoc = 2450;
+		rLoc = 2642;
 		rType = 0;
 		vrLen = 512;
 		vrLoc = 2526;
@@ -645,7 +645,7 @@
 		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
 		name = "CameraCapturer.m: 111";
 		rLen = 0;
-		rLoc = 2450;
+		rLoc = 2642;
 		rType = 0;
 		vrLen = 512;
 		vrLoc = 2526;
@@ -692,7 +692,7 @@
 		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
 		name = "CameraCapturer.m: 111";
 		rLen = 0;
-		rLoc = 2450;
+		rLoc = 2642;
 		rType = 0;
 		vrLen = 512;
 		vrLoc = 2526;
@@ -702,7 +702,7 @@
 		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
 		name = "CameraCapturer.m: 111";
 		rLen = 0;
-		rLoc = 2450;
+		rLoc = 2642;
 		rType = 0;
 		vrLen = 512;
 		vrLoc = 2526;
@@ -749,7 +749,7 @@
 		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
 		name = "CameraCapturer.m: 111";
 		rLen = 0;
-		rLoc = 2450;
+		rLoc = 2642;
 		rType = 0;
 		vrLen = 512;
 		vrLoc = 2526;
@@ -769,7 +769,7 @@
 		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
 		name = "ntpAAppDelegate.m: 133";
 		rLen = 0;
-		rLoc = 4713;
+		rLoc = 4723;
 		rType = 0;
 		vrLen = 987;
 		vrLoc = 3896;
@@ -794,6 +794,275 @@
 		vrLen = 2236;
 		vrLoc = 12195;
 	};
+	740636B713F5F386009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
+		name = "CameraCapturer.m: 111";
+		rLen = 0;
+		rLoc = 2642;
+		rType = 0;
+		vrLen = 443;
+		vrLoc = 2526;
+	};
+	740636B813F5F386009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 86C39F17126A1FA100A9DCD1 /* ntpA_Prefix.pch */;
+		name = "ntpA_Prefix.pch: 23";
+		rLen = 0;
+		rLoc = 512;
+		rType = 0;
+		vrLen = 523;
+		vrLoc = 309;
+	};
+	740636B913F5F388009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
+		name = "CameraCapturer.m: 111";
+		rLen = 0;
+		rLoc = 2642;
+		rType = 0;
+		vrLen = 443;
+		vrLoc = 2526;
+	};
+	740636BA13F5F388009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 86C39F17126A1FA100A9DCD1 /* ntpA_Prefix.pch */;
+		name = "ntpA_Prefix.pch: 23";
+		rLen = 0;
+		rLoc = 512;
+		rType = 0;
+		vrLen = 523;
+		vrLoc = 309;
+	};
+	740636C113F5F3AF009A1B9C /* LLOrientationDetector.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1122, 2314}}";
+			sepNavSelRange = "{611, 32}";
+			sepNavVisRange = "{2046, 786}";
+		};
+	};
+	740636C413F5F446009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 86618F29126BB6430046A2B8 /* NetworkClock.m */;
+		name = "NetworkClock.m: 250";
+		rLen = 0;
+		rLoc = 13506;
+		rType = 0;
+		vrLen = 2236;
+		vrLoc = 12195;
+	};
+	740636C513F5F446009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
+		name = "ntpAAppDelegate.m: 133";
+		rLen = 0;
+		rLoc = 4723;
+		rType = 0;
+		vrLen = 834;
+		vrLoc = 4049;
+	};
+	740636C613F5F446009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
+		name = "ntpAAppDelegate.m: 72";
+		rLen = 6;
+		rLoc = 2733;
+		rType = 0;
+		vrLen = 1206;
+		vrLoc = 2226;
+	};
+	740636D113F5F4DD009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 86C39F1D126A1FA100A9DCD1 /* ntpAAppDelegate.h */;
+		name = "ntpAAppDelegate.h: 33";
+		rLen = 0;
+		rLoc = 736;
+		rType = 0;
+		vrLen = 934;
+		vrLoc = 0;
+	};
+	740636D213F5F4DD009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
+		name = "ntpAAppDelegate.m: 156";
+		rLen = 28;
+		rLoc = 4860;
+		rType = 0;
+		vrLen = 972;
+		vrLoc = 4062;
+	};
+	740636D313F5F4DD009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
+		name = "CameraCapturer.m: 160";
+		rLen = 0;
+		rLoc = 5171;
+		rType = 0;
+		vrLen = 1202;
+		vrLoc = 3315;
+	};
+	740636D413F5F4DD009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
+		name = "CameraCapturer.m: 160";
+		rLen = 0;
+		rLoc = 5171;
+		rType = 0;
+		vrLen = 1202;
+		vrLoc = 3315;
+	};
+	740636D713F5F533009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
+		name = "CameraCapturer.m: 129";
+		rLen = 0;
+		rLoc = 3951;
+		rType = 0;
+		vrLen = 1579;
+		vrLoc = 2597;
+	};
+	740636D813F5F533009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
+		name = "ntpAAppDelegate.m: 156";
+		rLen = 28;
+		rLoc = 4860;
+		rType = 0;
+		vrLen = 970;
+		vrLoc = 4064;
+	};
+	740636D913F5F533009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
+		name = "ntpAAppDelegate.m: 156";
+		rLen = 28;
+		rLoc = 4860;
+		rType = 0;
+		vrLen = 701;
+		vrLoc = 5070;
+	};
+	740636EB13F5F635009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
+		name = "CameraCapturer.m: 119";
+		rLen = 0;
+		rLoc = 2642;
+		rType = 0;
+		vrLen = 345;
+		vrLoc = 2668;
+	};
+	740636EC13F5F635009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 86618F29126BB6430046A2B8 /* NetworkClock.m */;
+		name = "NetworkClock.m: 236";
+		rLen = 0;
+		rLoc = 12626;
+		rType = 0;
+		vrLen = 1261;
+		vrLoc = 12038;
+	};
+	740636ED13F5F635009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 86618F29126BB6430046A2B8 /* NetworkClock.m */;
+		name = "NetworkClock.m: 236";
+		rLen = 0;
+		rLoc = 12626;
+		rType = 0;
+		vrLen = 1359;
+		vrLoc = 12121;
+	};
+	740636F013F5F6A2009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 86C39F1D126A1FA100A9DCD1 /* ntpAAppDelegate.h */;
+		name = "ntpAAppDelegate.h: 31";
+		rLen = 0;
+		rLoc = 734;
+		rType = 0;
+		vrLen = 930;
+		vrLoc = 0;
+	};
+	740636F113F5F6A2009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 740635B913F5DF76009A1B9C /* CameraCapturer.h */;
+		name = "CameraCapturer.h: 25";
+		rLen = 0;
+		rLoc = 591;
+		rType = 0;
+		vrLen = 849;
+		vrLoc = 0;
+	};
+	740636F213F5F6A2009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */;
+		name = "ntpAAppDelegate.m: 37";
+		rLen = 0;
+		rLoc = 1432;
+		rType = 0;
+		vrLen = 1511;
+		vrLoc = 738;
+	};
+	740636F313F5F6A2009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 740636C113F5F3AF009A1B9C /* LLOrientationDetector.m */;
+		name = "LLOrientationDetector.m: 35";
+		rLen = 32;
+		rLoc = 611;
+		rType = 0;
+		vrLen = 786;
+		vrLoc = 2046;
+	};
+	740636F413F5F6A2009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 740636F513F5F6A2009A1B9C /* UIImage.h */;
+		name = "UIImage.h: 17";
+		rLen = 0;
+		rLoc = 416;
+		rType = 0;
+		vrLen = 1108;
+		vrLoc = 0;
+	};
+	740636F513F5F6A2009A1B9C /* UIImage.h */ = {
+		isa = PBXFileReference;
+		name = UIImage.h;
+		path = /Developer_ol/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImage.h;
+		sourceTree = "<absolute>";
+	};
+	740636F613F5F6A2009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 740636F713F5F6A2009A1B9C /* UIDevice.h */;
+		name = "UIDevice.h: 13";
+		rLen = 0;
+		rLoc = 226;
+		rType = 0;
+		vrLen = 1769;
+		vrLoc = 0;
+	};
+	740636F713F5F6A2009A1B9C /* UIDevice.h */ = {
+		isa = PBXFileReference;
+		name = UIDevice.h;
+		path = /Developer_ol/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h;
+		sourceTree = "<absolute>";
+	};
+	740636F813F5F6A2009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
+		name = "CameraCapturer.m: 142";
+		rLen = 27;
+		rLoc = 3367;
+		rType = 0;
+		vrLen = 1188;
+		vrLoc = 2891;
+	};
+	740636F913F5F6A2009A1B9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */;
+		name = "CameraCapturer.m: 161";
+		rLen = 0;
+		rLoc = 3925;
+		rType = 0;
+		vrLen = 928;
+		vrLoc = 3125;
+	};
 	8605D9A11290E9110036287D /* ntpAViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {519, 245}}";
@@ -810,9 +1079,9 @@
 	};
 	86618F29126BB6430046A2B8 /* NetworkClock.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1122, 4316}}";
-			sepNavSelRange = "{13506, 0}";
-			sepNavVisRange = "{12195, 2236}";
+			sepNavIntBoundsRect = "{{0, 0}, {1065, 4433}}";
+			sepNavSelRange = "{12626, 0}";
+			sepNavVisRange = "{12121, 1359}";
 		};
 	};
 	86C39F00126A1FA000A9DCD1 /* Project object */ = {
@@ -931,6 +1200,31 @@
 			7406368413F5EB51009A1B9C /* PBXTextBookmark */ = 7406368413F5EB51009A1B9C /* PBXTextBookmark */;
 			7406368513F5EB51009A1B9C /* PBXTextBookmark */ = 7406368513F5EB51009A1B9C /* PBXTextBookmark */;
 			7406368613F5EB51009A1B9C /* PBXTextBookmark */ = 7406368613F5EB51009A1B9C /* PBXTextBookmark */;
+			740636B713F5F386009A1B9C /* PBXTextBookmark */ = 740636B713F5F386009A1B9C /* PBXTextBookmark */;
+			740636B813F5F386009A1B9C /* PBXTextBookmark */ = 740636B813F5F386009A1B9C /* PBXTextBookmark */;
+			740636B913F5F388009A1B9C /* PBXTextBookmark */ = 740636B913F5F388009A1B9C /* PBXTextBookmark */;
+			740636BA13F5F388009A1B9C /* PBXTextBookmark */ = 740636BA13F5F388009A1B9C /* PBXTextBookmark */;
+			740636C413F5F446009A1B9C /* PBXTextBookmark */ = 740636C413F5F446009A1B9C /* PBXTextBookmark */;
+			740636C513F5F446009A1B9C /* PBXTextBookmark */ = 740636C513F5F446009A1B9C /* PBXTextBookmark */;
+			740636C613F5F446009A1B9C /* PBXTextBookmark */ = 740636C613F5F446009A1B9C /* PBXTextBookmark */;
+			740636D113F5F4DD009A1B9C /* PBXTextBookmark */ = 740636D113F5F4DD009A1B9C /* PBXTextBookmark */;
+			740636D213F5F4DD009A1B9C /* PBXTextBookmark */ = 740636D213F5F4DD009A1B9C /* PBXTextBookmark */;
+			740636D313F5F4DD009A1B9C /* PBXTextBookmark */ = 740636D313F5F4DD009A1B9C /* PBXTextBookmark */;
+			740636D413F5F4DD009A1B9C /* PBXTextBookmark */ = 740636D413F5F4DD009A1B9C /* PBXTextBookmark */;
+			740636D713F5F533009A1B9C /* PBXTextBookmark */ = 740636D713F5F533009A1B9C /* PBXTextBookmark */;
+			740636D813F5F533009A1B9C /* PBXTextBookmark */ = 740636D813F5F533009A1B9C /* PBXTextBookmark */;
+			740636D913F5F533009A1B9C /* PBXTextBookmark */ = 740636D913F5F533009A1B9C /* PBXTextBookmark */;
+			740636EB13F5F635009A1B9C /* PBXTextBookmark */ = 740636EB13F5F635009A1B9C /* PBXTextBookmark */;
+			740636EC13F5F635009A1B9C /* PBXTextBookmark */ = 740636EC13F5F635009A1B9C /* PBXTextBookmark */;
+			740636ED13F5F635009A1B9C /* PBXTextBookmark */ = 740636ED13F5F635009A1B9C /* PBXTextBookmark */;
+			740636F013F5F6A2009A1B9C /* PBXTextBookmark */ = 740636F013F5F6A2009A1B9C /* PBXTextBookmark */;
+			740636F113F5F6A2009A1B9C /* PBXTextBookmark */ = 740636F113F5F6A2009A1B9C /* PBXTextBookmark */;
+			740636F213F5F6A2009A1B9C /* PBXTextBookmark */ = 740636F213F5F6A2009A1B9C /* PBXTextBookmark */;
+			740636F313F5F6A2009A1B9C /* PBXTextBookmark */ = 740636F313F5F6A2009A1B9C /* PBXTextBookmark */;
+			740636F413F5F6A2009A1B9C /* PBXTextBookmark */ = 740636F413F5F6A2009A1B9C /* PBXTextBookmark */;
+			740636F613F5F6A2009A1B9C /* PBXTextBookmark */ = 740636F613F5F6A2009A1B9C /* PBXTextBookmark */;
+			740636F813F5F6A2009A1B9C /* PBXTextBookmark */ = 740636F813F5F6A2009A1B9C /* PBXTextBookmark */;
+			740636F913F5F6A2009A1B9C /* PBXTextBookmark */ = 740636F913F5F6A2009A1B9C /* PBXTextBookmark */;
 		};
 		sourceControlManager = 7406358813F5D9D8009A1B9C /* Source Control */;
 		userBuildSettings = {
@@ -944,23 +1238,23 @@
 	};
 	86C39F17126A1FA100A9DCD1 /* ntpA_Prefix.pch */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1065, 455}}";
-			sepNavSelRange = "{477, 0}";
-			sepNavVisRange = "{309, 627}";
+			sepNavIntBoundsRect = "{{0, 0}, {1065, 481}}";
+			sepNavSelRange = "{512, 0}";
+			sepNavVisRange = "{309, 523}";
 		};
 	};
 	86C39F1D126A1FA100A9DCD1 /* ntpAAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1122, 533}}";
-			sepNavSelRange = "{715, 14}";
-			sepNavVisRange = "{0, 998}";
+			sepNavIntBoundsRect = "{{0, 0}, {1122, 559}}";
+			sepNavSelRange = "{734, 0}";
+			sepNavVisRange = "{0, 930}";
 		};
 	};
 	86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1122, 2340}}";
-			sepNavSelRange = "{4713, 0}";
-			sepNavVisRange = "{3896, 987}";
+			sepNavIntBoundsRect = "{{0, 0}, {1122, 1898}}";
+			sepNavSelRange = "{1432, 0}";
+			sepNavVisRange = "{738, 1511}";
 		};
 	};
 	86E4C97A128242B800841647 /* NetAssociation.m */ = {

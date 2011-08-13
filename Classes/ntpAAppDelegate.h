@@ -10,6 +10,7 @@
 
 #import "CameraCapturer.h"
 
+
 @class ntpAViewController;
 
 @interface ntpAAppDelegate : NSObject <UIApplicationDelegate> {
@@ -27,6 +28,8 @@
 	BOOL pendingFrameCapture;
 	
 	CameraCapturer * cameraCapturer;
+	
+
 	
 }
 

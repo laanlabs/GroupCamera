@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
+#import "LLOrientationDetector.h"
 
 @interface CameraCapturer : NSObject {
 	
@@ -19,6 +20,9 @@
 	AVCaptureVideoPreviewLayer * previewLayer;
 	
 	UIImage * capturedImage;
+	
+	LLOrientationDetector * orientationDetector;	
+	UIDeviceOrientation currentDeviceOrientation;
 	
 }
 
