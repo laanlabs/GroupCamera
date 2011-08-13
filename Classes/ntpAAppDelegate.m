@@ -81,7 +81,7 @@
     netClockLabel.text = [NSString stringWithFormat:@"%@", networkTime];
     differenceLabel.text = [NSString stringWithFormat:@"%5.3f", [networkTime timeIntervalSinceDate:systemTime]];
     
-	NSTimeInterval t = [NSDate timeIntervalSinceReferenceDate];
+	NSTimeInterval t = [networkTime timeIntervalSinceReferenceDate];
 	
 	NSTimeInterval diff = timeToTakePhoto - t;
 	
