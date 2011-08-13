@@ -623,7 +623,6 @@
 				740636BD13F5F39E009A1B9C /* ImageUtils.m in Sources */,
 				740636C213F5F3AF009A1B9C /* LLOrientationVector.m in Sources */,
 				740636C313F5F3AF009A1B9C /* LLOrientationDetector.m in Sources */,
-<<<<<<< HEAD
 				9676CFCD13F5FD5D00A8AA52 /* ASIAuthenticationDialog.m in Sources */,
 				9676CFCE13F5FD5D00A8AA52 /* ASIDownloadCache.m in Sources */,
 				9676CFCF13F5FD5D00A8AA52 /* ASIFormDataRequest.m in Sources */,
