@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "CameraCapturer.h"
+
 @class ntpAViewController;
 
 @interface ntpAAppDelegate : NSObject <UIApplicationDelegate> {
@@ -20,7 +22,12 @@
     IBOutlet UILabel *              differenceLabel;
     IBOutlet UILabel *              countdownLabel;
 
-    
+    NSTimeInterval timeToTakePhoto;
+	BOOL photoCountdownStarted;
+	BOOL pendingFrameCapture;
+	
+	CameraCapturer * cameraCapturer;
+	
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *           window;
@@ -28,6 +35,7 @@
 
 - (void) repeatingMethod:(NSTimer*)theTimer;
 
-- (IBAction) postServerTime;
+-(IBAction) snapPhotoClicked;
+-(IBAction) getFakeTimeFromServer;
 
 @end

@@ -11,7 +11,7 @@
 
 #define TIMESERVER_BASE_URL @"http://labs.laan.com/projects/iPhone/GroupCamera/"
 
-@implementation TimeServer
+@implementation PictureTimeServer
 
 
 - (void) postTime:(NSString*)timeString {

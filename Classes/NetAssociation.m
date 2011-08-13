@@ -177,7 +177,7 @@ static double ntpDiffSeconds(struct ntpTimestamp * start, struct ntpTimestamp * 
 
 - (void) evaluatePacket {
     double          packetOffset = 0.0;                     // initial untrustworthy offset
-//  NTP_Logging(@"%@", [self prettyPrintPacket]);
+  NTP_Logging(@"%@", [self prettyPrintPacket]);
 /*┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
   │ determine the quality of this particular time ..                                                 │
   │ .. if max_error is less than 50mS (and not zero) AND                                             │
@@ -198,9 +198,10 @@ static double ntpDiffSeconds(struct ntpTimestamp * start, struct ntpTimestamp * 
     fifoQueue[fifoIndex % 8] = packetOffset;                // store offset
     fifoIndex++;                                            // rotate index
 
-    NTP_Logging(@"[%@] index=%i {%5.3f,%5.3f,%5.3f,%5.3f,%5.3f,%5.3f,%5.3f,%5.3f}", server,
+   NTP_Logging(@"[%@] index=%i {%5.3f,%5.3f,%5.3f,%5.3f,%5.3f,%5.3f,%5.3f,%5.3f}", server,
                 fifoIndex % 8, fifoQueue[0], fifoQueue[1], fifoQueue[2], fifoQueue[3], 
                                fifoQueue[4], fifoQueue[5], fifoQueue[6], fifoQueue[7]);
+	
 /*┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
   │ look at the (up to eight) offsets in the fifo and and count 'good', 'fail' and 'not used yet'    │
   └──────────────────────────────────────────────────────────────────────────────────────────────────┘*/

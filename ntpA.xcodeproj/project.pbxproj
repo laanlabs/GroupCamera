@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		740635BB13F5DF76009A1B9C /* CameraCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 740635BA13F5DF76009A1B9C /* CameraCapturer.m */; };
+		740635BF13F5DFCE009A1B9C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740635BE13F5DFCE009A1B9C /* AVFoundation.framework */; };
+		740635C113F5DFCE009A1B9C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740635C013F5DFCE009A1B9C /* CoreMedia.framework */; };
+		740635C313F5DFCE009A1B9C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740635C213F5DFCE009A1B9C /* CoreVideo.framework */; };
+		740635C513F5DFCE009A1B9C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740635C413F5DFCE009A1B9C /* QuartzCore.framework */; };
 		8605D9A31290E9110036287D /* ntpAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8605D9A21290E9110036287D /* ntpAViewController.m */; };
 		8605D9BA1290E9600036287D /* ntpAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8605D9B81290E9600036287D /* ntpAViewController.xib */; };
 		86618F2A126BB6430046A2B8 /* NetworkClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 86618F29126BB6430046A2B8 /* NetworkClock.m */; };
@@ -20,59 +25,21 @@
 		86C39F1F126A1FA100A9DCD1 /* ntpAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */; };
 		86C39F22126A1FA100A9DCD1 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C39F20126A1FA100A9DCD1 /* MainWindow.xib */; };
 		86E4C97B128242B800841647 /* NetAssociation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E4C97A128242B800841647 /* NetAssociation.m */; };
-		96B615CD13F5EA6600EB5690 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6156813F5EA6600EB5690 /* ASIAuthenticationDialog.m */; };
-		96B615CE13F5EA6600EB5690 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6156B13F5EA6600EB5690 /* ASIDownloadCache.m */; };
-		96B615CF13F5EA6600EB5690 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6156D13F5EA6600EB5690 /* ASIFormDataRequest.m */; };
-		96B615D013F5EA6600EB5690 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6156F13F5EA6600EB5690 /* ASIHTTPRequest.m */; };
-		96B615D113F5EA6600EB5690 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6157313F5EA6600EB5690 /* ASIInputStream.m */; };
-		96B615D213F5EA6600EB5690 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6157513F5EA6600EB5690 /* ASINetworkQueue.m */; };
-		96B615D313F5EA6600EB5690 /* ASICloudFilesCDNRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6157913F5EA6600EB5690 /* ASICloudFilesCDNRequest.m */; };
-		96B615D413F5EA6600EB5690 /* ASICloudFilesContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6157B13F5EA6600EB5690 /* ASICloudFilesContainer.m */; };
-		96B615D513F5EA6600EB5690 /* ASICloudFilesContainerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6157D13F5EA6600EB5690 /* ASICloudFilesContainerRequest.m */; };
-		96B615D613F5EA6600EB5690 /* ASICloudFilesContainerXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6157F13F5EA6600EB5690 /* ASICloudFilesContainerXMLParserDelegate.m */; };
-		96B615D713F5EA6600EB5690 /* ASICloudFilesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6158113F5EA6600EB5690 /* ASICloudFilesObject.m */; };
-		96B615D813F5EA6600EB5690 /* ASICloudFilesObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6158313F5EA6600EB5690 /* ASICloudFilesObjectRequest.m */; };
-		96B615D913F5EA6600EB5690 /* ASICloudFilesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6158513F5EA6600EB5690 /* ASICloudFilesRequest.m */; };
-		96B615DA13F5EA6600EB5690 /* ASIS3Bucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6158913F5EA6600EB5690 /* ASIS3Bucket.m */; };
-		96B615DB13F5EA6600EB5690 /* ASIS3BucketObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6158B13F5EA6600EB5690 /* ASIS3BucketObject.m */; };
-		96B615DC13F5EA6600EB5690 /* ASIS3BucketRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6158D13F5EA6600EB5690 /* ASIS3BucketRequest.m */; };
-		96B615DD13F5EA6600EB5690 /* ASIS3ObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6158F13F5EA6600EB5690 /* ASIS3ObjectRequest.m */; };
-		96B615DE13F5EA6600EB5690 /* ASIS3Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6159113F5EA6600EB5690 /* ASIS3Request.m */; };
-		96B615DF13F5EA6600EB5690 /* ASIS3ServiceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6159313F5EA6600EB5690 /* ASIS3ServiceRequest.m */; };
-		96B615E013F5EA6600EB5690 /* ASIOAuthHeaderProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6159613F5EA6600EB5690 /* ASIOAuthHeaderProvider.m */; };
-		96B615E113F5EA6600EB5690 /* ASIHTTPRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6159C13F5EA6600EB5690 /* ASIHTTPRequest+Parameters.m */; };
-		96B615E213F5EA6600EB5690 /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6159E13F5EA6600EB5690 /* NSMutableURLRequest+Parameters.m */; };
-		96B615E313F5EA6600EB5690 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B615A013F5EA6600EB5690 /* NSString+URLEncoding.m */; };
-		96B615E413F5EA6600EB5690 /* NSURL+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B615A213F5EA6600EB5690 /* NSURL+Base.m */; };
-		96B615E513F5EA6600EB5690 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 96B615A413F5EA6600EB5690 /* Base64Transcoder.c */; };
-		96B615E613F5EA6600EB5690 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 96B615A613F5EA6600EB5690 /* hmac.c */; };
-		96B615E713F5EA6600EB5690 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 96B615A813F5EA6600EB5690 /* sha1.c */; };
-		96B615E813F5EA6600EB5690 /* OACall.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B615AB13F5EA6600EB5690 /* OACall.m */; };
-		96B615E913F5EA6600EB5690 /* OAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B615AD13F5EA6600EB5690 /* OAConsumer.m */; };
-		96B615EA13F5EA6600EB5690 /* OADataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B615AF13F5EA6600EB5690 /* OADataFetcher.m */; };
-		96B615EB13F5EA6600EB5690 /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B615B113F5EA6600EB5690 /* OAHMAC_SHA1SignatureProvider.m */; };
-		96B615EC13F5EA6600EB5690 /* OAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B615B313F5EA6600EB5690 /* OAMutableURLRequest.m */; };
-		96B615ED13F5EA6600EB5690 /* OAPlaintextSignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B615B513F5EA6600EB5690 /* OAPlaintextSignatureProvider.m */; };
-		96B615EE13F5EA6600EB5690 /* OAProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B615B713F5EA6600EB5690 /* OAProblem.m */; };
-		96B615EF13F5EA6600EB5690 /* OARequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B615B913F5EA6600EB5690 /* OARequestParameter.m */; };
-		96B615F013F5EA6600EB5690 /* OAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B615BB13F5EA6600EB5690 /* OAServiceTicket.m */; };
 		96B615F113F5EA6600EB5690 /* OATestServer.rb in Resources */ = {isa = PBXBuildFile; fileRef = 96B615BD13F5EA6600EB5690 /* OATestServer.rb */; };
-		96B615F213F5EA6600EB5690 /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B615BF13F5EA6600EB5690 /* OAToken.m */; };
-		96B615F313F5EA6600EB5690 /* OATokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B615C113F5EA6600EB5690 /* OATokenManager.m */; };
 		96B615F413F5EA6600EB5690 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 96B615C313F5EA6600EB5690 /* README */; };
-		96B615F513F5EA6600EB5690 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B615C613F5EA6600EB5690 /* Reachability.m */; };
-		96B615F613F5EA6600EB5690 /* RequestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B615C813F5EA6600EB5690 /* RequestObject.m */; };
-		96B615F713F5EA6600EB5690 /* UploadTumblr.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B615CA13F5EA6600EB5690 /* UploadTumblr.m */; };
-		96B615FE13F5EADD00EB5690 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B615FB13F5EADD00EB5690 /* NSDataAdditions.m */; };
-		96B615FF13F5EADD00EB5690 /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B615FD13F5EADD00EB5690 /* NSStringAdditions.m */; };
 		96B6160113F5EB6100EB5690 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B6160013F5EB6100EB5690 /* libz.dylib */; };
 		96B6160313F5EB7A00EB5690 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B6160213F5EB7A00EB5690 /* SystemConfiguration.framework */; };
 		96B6160613F5EBA700EB5690 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B6160413F5EBA700EB5690 /* MobileCoreServices.framework */; };
-		96B6160913F5ED7900EB5690 /* TimeServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B6160813F5ED7900EB5690 /* TimeServer.m */; };
 		96D0150013F5C66F00BFF857 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D014FE13F5C66F00BFF857 /* AsyncUdpSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		740635B913F5DF76009A1B9C /* CameraCapturer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCapturer.h; sourceTree = "<group>"; };
+		740635BA13F5DF76009A1B9C /* CameraCapturer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraCapturer.m; sourceTree = "<group>"; };
+		740635BE13F5DFCE009A1B9C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		740635C013F5DFCE009A1B9C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		740635C213F5DFCE009A1B9C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		740635C413F5DFCE009A1B9C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8605D9A11290E9110036287D /* ntpAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ntpAViewController.h; sourceTree = "<group>"; };
 		8605D9A21290E9110036287D /* ntpAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ntpAViewController.m; sourceTree = "<group>"; };
 		8605D9B91290E9600036287D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ntpAViewController.xib; sourceTree = "<group>"; };
@@ -193,8 +160,8 @@
 		96B6160213F5EB7A00EB5690 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		96B6160413F5EBA700EB5690 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		96B6160513F5EBA700EB5690 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		96B6160713F5ED7800EB5690 /* TimeServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeServer.h; sourceTree = "<group>"; };
-		96B6160813F5ED7900EB5690 /* TimeServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeServer.m; sourceTree = "<group>"; };
+		96B6160713F5ED7800EB5690 /* PictureTimeServer.h */ = {isa = PBXFileReference; fileEncoding = 4; path = PictureTimeServer.h; sourceTree = "<group>"; };
+		96B6160813F5ED7900EB5690 /* PictureTimeServer.m */ = {isa = PBXFileReference; fileEncoding = 4; path = PictureTimeServer.m; sourceTree = "<group>"; };
 		96D014FC13F5C65400BFF857 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthesizeSingleton.h; path = Classes/SynthesizeSingleton.h; sourceTree = "<group>"; };
 		96D014FE13F5C66F00BFF857 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncUdpSocket.m; path = cocoaasyncsocket/RunLoop/AsyncUdpSocket.m; sourceTree = SOURCE_ROOT; };
 		96D014FF13F5C66F00BFF857 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncUdpSocket.h; path = cocoaasyncsocket/RunLoop/AsyncUdpSocket.h; sourceTree = SOURCE_ROOT; };
@@ -212,6 +179,10 @@
 				8661907B126C0CEC0046A2B8 /* Foundation.framework in Frameworks */,
 				86619082126C0CFD0046A2B8 /* CoreGraphics.framework in Frameworks */,
 				86619086126C0D120046A2B8 /* CFNetwork.framework in Frameworks */,
+				740635BF13F5DFCE009A1B9C /* AVFoundation.framework in Frameworks */,
+				740635C113F5DFCE009A1B9C /* CoreMedia.framework in Frameworks */,
+				740635C313F5DFCE009A1B9C /* CoreVideo.framework in Frameworks */,
+				740635C513F5DFCE009A1B9C /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +211,8 @@
 				96B6156513F5EA6600EB5690 /* Net */,
 				96D014FE13F5C66F00BFF857 /* AsyncUdpSocket.m */,
 				96D014FF13F5C66F00BFF857 /* AsyncUdpSocket.h */,
+				740635B913F5DF76009A1B9C /* CameraCapturer.h */,
+				740635BA13F5DF76009A1B9C /* CameraCapturer.m */,
 				86C39F1D126A1FA100A9DCD1 /* ntpAAppDelegate.h */,
 				86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */,
 				8605D9A11290E9110036287D /* ntpAViewController.h */,
@@ -277,6 +250,10 @@
 		86C39F08126A1FA100A9DCD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				740635BE13F5DFCE009A1B9C /* AVFoundation.framework */,
+				740635C013F5DFCE009A1B9C /* CoreMedia.framework */,
+				740635C213F5DFCE009A1B9C /* CoreVideo.framework */,
+				740635C413F5DFCE009A1B9C /* QuartzCore.framework */,
 				8661906E126C0CD70046A2B8 /* UIKit.framework */,
 				8661907A126C0CEC0046A2B8 /* Foundation.framework */,
 				86619081126C0CFD0046A2B8 /* CoreGraphics.framework */,
@@ -318,8 +295,8 @@
 				96B615C813F5EA6600EB5690 /* RequestObject.m */,
 				96B615C913F5EA6600EB5690 /* UploadTumblr.h */,
 				96B615CA13F5EA6600EB5690 /* UploadTumblr.m */,
-				96B6160713F5ED7800EB5690 /* TimeServer.h */,
-				96B6160813F5ED7900EB5690 /* TimeServer.m */,
+				96B6160713F5ED7800EB5690 /* PictureTimeServer.h */,
+				96B6160813F5ED7900EB5690 /* PictureTimeServer.m */,
 			);
 			path = Net;
 			sourceTree = "<group>";
@@ -549,50 +526,7 @@
 				86E4C97B128242B800841647 /* NetAssociation.m in Sources */,
 				8605D9A31290E9110036287D /* ntpAViewController.m in Sources */,
 				96D0150013F5C66F00BFF857 /* AsyncUdpSocket.m in Sources */,
-				96B615CD13F5EA6600EB5690 /* ASIAuthenticationDialog.m in Sources */,
-				96B615CE13F5EA6600EB5690 /* ASIDownloadCache.m in Sources */,
-				96B615CF13F5EA6600EB5690 /* ASIFormDataRequest.m in Sources */,
-				96B615D013F5EA6600EB5690 /* ASIHTTPRequest.m in Sources */,
-				96B615D113F5EA6600EB5690 /* ASIInputStream.m in Sources */,
-				96B615D213F5EA6600EB5690 /* ASINetworkQueue.m in Sources */,
-				96B615D313F5EA6600EB5690 /* ASICloudFilesCDNRequest.m in Sources */,
-				96B615D413F5EA6600EB5690 /* ASICloudFilesContainer.m in Sources */,
-				96B615D513F5EA6600EB5690 /* ASICloudFilesContainerRequest.m in Sources */,
-				96B615D613F5EA6600EB5690 /* ASICloudFilesContainerXMLParserDelegate.m in Sources */,
-				96B615D713F5EA6600EB5690 /* ASICloudFilesObject.m in Sources */,
-				96B615D813F5EA6600EB5690 /* ASICloudFilesObjectRequest.m in Sources */,
-				96B615D913F5EA6600EB5690 /* ASICloudFilesRequest.m in Sources */,
-				96B615DA13F5EA6600EB5690 /* ASIS3Bucket.m in Sources */,
-				96B615DB13F5EA6600EB5690 /* ASIS3BucketObject.m in Sources */,
-				96B615DC13F5EA6600EB5690 /* ASIS3BucketRequest.m in Sources */,
-				96B615DD13F5EA6600EB5690 /* ASIS3ObjectRequest.m in Sources */,
-				96B615DE13F5EA6600EB5690 /* ASIS3Request.m in Sources */,
-				96B615DF13F5EA6600EB5690 /* ASIS3ServiceRequest.m in Sources */,
-				96B615E013F5EA6600EB5690 /* ASIOAuthHeaderProvider.m in Sources */,
-				96B615E113F5EA6600EB5690 /* ASIHTTPRequest+Parameters.m in Sources */,
-				96B615E213F5EA6600EB5690 /* NSMutableURLRequest+Parameters.m in Sources */,
-				96B615E313F5EA6600EB5690 /* NSString+URLEncoding.m in Sources */,
-				96B615E413F5EA6600EB5690 /* NSURL+Base.m in Sources */,
-				96B615E513F5EA6600EB5690 /* Base64Transcoder.c in Sources */,
-				96B615E613F5EA6600EB5690 /* hmac.c in Sources */,
-				96B615E713F5EA6600EB5690 /* sha1.c in Sources */,
-				96B615E813F5EA6600EB5690 /* OACall.m in Sources */,
-				96B615E913F5EA6600EB5690 /* OAConsumer.m in Sources */,
-				96B615EA13F5EA6600EB5690 /* OADataFetcher.m in Sources */,
-				96B615EB13F5EA6600EB5690 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
-				96B615EC13F5EA6600EB5690 /* OAMutableURLRequest.m in Sources */,
-				96B615ED13F5EA6600EB5690 /* OAPlaintextSignatureProvider.m in Sources */,
-				96B615EE13F5EA6600EB5690 /* OAProblem.m in Sources */,
-				96B615EF13F5EA6600EB5690 /* OARequestParameter.m in Sources */,
-				96B615F013F5EA6600EB5690 /* OAServiceTicket.m in Sources */,
-				96B615F213F5EA6600EB5690 /* OAToken.m in Sources */,
-				96B615F313F5EA6600EB5690 /* OATokenManager.m in Sources */,
-				96B615F513F5EA6600EB5690 /* Reachability.m in Sources */,
-				96B615F613F5EA6600EB5690 /* RequestObject.m in Sources */,
-				96B615F713F5EA6600EB5690 /* UploadTumblr.m in Sources */,
-				96B615FE13F5EADD00EB5690 /* NSDataAdditions.m in Sources */,
-				96B615FF13F5EADD00EB5690 /* NSStringAdditions.m in Sources */,
-				96B6160913F5ED7900EB5690 /* TimeServer.m in Sources */,
+				740635BB13F5DF76009A1B9C /* CameraCapturer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

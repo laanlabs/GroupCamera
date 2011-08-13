@@ -12,7 +12,7 @@
 
 
 
-@interface TimeServer : RequestObject {
+@interface PictureTimeServer : RequestObject {
     
 }
 
