@@ -33,6 +33,7 @@
 		86C39F1F126A1FA100A9DCD1 /* ntpAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C39F1E126A1FA100A9DCD1 /* ntpAAppDelegate.m */; };
 		86C39F22126A1FA100A9DCD1 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C39F20126A1FA100A9DCD1 /* MainWindow.xib */; };
 		86E4C97B128242B800841647 /* NetAssociation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E4C97A128242B800841647 /* NetAssociation.m */; };
+		961F97FD13F6AF96003B3C71 /* test_photo.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 961F97FC13F6AF96003B3C71 /* test_photo.JPG */; };
 		9676CFCD13F5FD5D00A8AA52 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9676CF6413F5FD5D00A8AA52 /* ASIAuthenticationDialog.m */; };
 		9676CFCE13F5FD5D00A8AA52 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9676CF6713F5FD5D00A8AA52 /* ASIDownloadCache.m */; };
 		9676CFCF13F5FD5D00A8AA52 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9676CF6913F5FD5D00A8AA52 /* ASIFormDataRequest.m */; };
@@ -127,6 +128,7 @@
 		86C39F21126A1FA100A9DCD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		86E4C979128242B800841647 /* NetAssociation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetAssociation.h; sourceTree = "<group>"; };
 		86E4C97A128242B800841647 /* NetAssociation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetAssociation.m; sourceTree = "<group>"; };
+		961F97FC13F6AF96003B3C71 /* test_photo.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_photo.JPG; sourceTree = "<group>"; };
 		9676CF6313F5FD5D00A8AA52 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		9676CF6413F5FD5D00A8AA52 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		9676CF6513F5FD5D00A8AA52 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 		86C39F07126A1FA100A9DCD1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				961F97FC13F6AF96003B3C71 /* test_photo.JPG */,
 				86619012126C07300046A2B8 /* ntp.hosts */,
 				86C39F16126A1FA100A9DCD1 /* ntpA-Info.plist */,
 				86C39F18126A1FA100A9DCD1 /* InfoPlist.strings */,
@@ -603,6 +606,7 @@
 				8605D9BA1290E9600036287D /* ntpAViewController.xib in Resources */,
 				9676CFF313F5FD5E00A8AA52 /* OATestServer.rb in Resources */,
 				9676CFF613F5FD5E00A8AA52 /* README in Resources */,
+				961F97FD13F6AF96003B3C71 /* test_photo.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

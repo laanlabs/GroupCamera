@@ -69,6 +69,9 @@
     [readTimer release];
     
     
+
+    
+    
     return YES;
 }
 
@@ -128,6 +131,35 @@
 //
     
 }
+
+
+-(void) uploadPhoto {
+    
+	PictureTimeServer * req = [[PictureTimeServer alloc] init];
+	req.delegate = self;	
+	req.onSuccess = @selector(uploadSuccess:);
+	req.onFail = @selector(uploadFail:);
+	
+ 
+    UIImage* image = [UIImage imageNamed:@"test_photo.JPG"];
+    
+	[req postPhoto:image withName:@"the_comp_position.jpg"];
+	
+    
+    
+}
+
+-(void) uploadPhotoSuccess:(id) response 
+{
+    
+}
+
+
+-(void) uploadPhotoFail:(id) response 
+{
+    
+}	
+
 
 -(void) takePhoto {
 	
