@@ -28,4 +28,6 @@
 
 - (void) repeatingMethod:(NSTimer*)theTimer;
 
+- (IBAction) postServerTime;
+
 @end
