@@ -90,9 +90,16 @@
 	
 	//[NSTimer scheduledTimerWithTimeInterval:(.05) target:self selector:@selector(updateFrequency) userInfo:nil repeats:YES];
     
+<<<<<<< HEAD
 	// stop syncing time after 10 seconds...
 	[self performSelector:@selector(stopNetworkClock) withObject:nil afterDelay:5.0];
 	
+=======
+    
+
+    
+    
+>>>>>>> 5efd45d5874ab385f0f86eb7f08d7ec7079dd695
     return YES;
 }
 
@@ -276,6 +283,35 @@
 	[cameraCapturer beginCapturingCamera];
 	
 }
+
+
+-(void) uploadPhoto {
+    
+	PictureTimeServer * req = [[PictureTimeServer alloc] init];
+	req.delegate = self;	
+	req.onSuccess = @selector(uploadSuccess:);
+	req.onFail = @selector(uploadFail:);
+	
+ 
+    UIImage* image = [UIImage imageNamed:@"test_photo.JPG"];
+    
+	[req postPhoto:image withName:@"the_comp_position.jpg"];
+	
+    
+    
+}
+
+-(void) uploadPhotoSuccess:(id) response 
+{
+    
+}
+
+
+-(void) uploadPhotoFail:(id) response 
+{
+    
+}	
+
 
 -(void) takePhoto {
 	

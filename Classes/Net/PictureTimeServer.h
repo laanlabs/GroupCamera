@@ -19,5 +19,6 @@
 
 - (void) postTime:(NSString*)timeString;
 - (void) readTime;
+- (void) postPhoto:(UIImage*)currentImage withName:(NSString*)imageName;
 
 @end
