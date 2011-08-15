@@ -23,6 +23,21 @@
     IBOutlet UILabel *              differenceLabel;
     IBOutlet UILabel *              countdownLabel;
 
+	IBOutlet UISwitch * talkSwitch;
+	IBOutlet UISwitch * listenSwitch;
+	
+	IBOutlet UISlider * freqSlider;
+	IBOutlet UILabel * freqLabel;
+	
+	IBOutlet UILabel * timeLabel;
+	IBOutlet UILabel * digitLabel;
+	
+	IBOutlet UILabel * theirTimeLabel;
+	IBOutlet UILabel * theirTimeLabel2;
+	IBOutlet UILabel * myTimeLabel;
+	
+	IBOutlet UILabel * syncLabel;
+	
     NSTimeInterval timeToTakePhoto;
 	BOOL photoCountdownStarted;
 	BOOL pendingFrameCapture;
@@ -31,7 +46,14 @@
 	
 	AudioManager * audioManager;
 	
-
+	NSTimeInterval beginTime;
+	NSTimeInterval NTPSearchduration;
+	BOOL isSyncingWithSound;
+	BOOL soundSyncAchieved;
+	
+	NSTimeInterval differenceBetweenMyNetworkTimeAndTheirs;
+	
+	CADisplayLink * displayLink;
 	
 }
 
@@ -42,5 +64,15 @@
 
 -(IBAction) snapPhotoClicked;
 -(IBAction) getFakeTimeFromServer;
+
+-(IBAction) talkSwitched;
+-(IBAction) listenSwitched;
+
+-(IBAction) freqUp;
+-(IBAction) freqDown;
+
+-(IBAction) freqSliderChanged;
+
+-(NSTimeInterval) getTheirNetworkInterval;
 
 @end

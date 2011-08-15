@@ -134,7 +134,8 @@ static OSStatus audioOutputCallback(void *inRefCon, AudioUnitRenderActionFlags *
 		
 		audioFormat.mFormatID = kAudioFormatLinearPCM;
 		//mFormatFlags = kAudioFormatFlagsCanonical | (kAudioUnitSampleFractionBits << kLinearPCMFormatFlagsSampleFractionShift);
-		audioFormat.mFormatFlags = kAudioFormatFlagsCanonical;
+		//-audioFormat.mFormatFlags = kAudioFormatFlagsCanonical;
+		audioFormat.mFormatFlags      =  kAudioFormatFlagIsNonInterleaved | kAudioFormatFlagIsSignedInteger;
 		audioFormat.mChannelsPerFrame = nChannels;
 		audioFormat.mFramesPerPacket = 1;
 		audioFormat.mBitsPerChannel = 8 * sizeof(AudioUnitSampleType);

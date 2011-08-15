@@ -111,7 +111,7 @@
 - (void)readTimeFail:(ASIHTTPRequest *)asrequest
 {
 	NSString *response = [asrequest responseString];
-	NSLog(@"RESPONSE: %@", response);
+	//NSLog(@"RESPONSE: %@", response);
 	
 	if ([response length] == 0) 
 		response = @"Unknown Upload Fail";

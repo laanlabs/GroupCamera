@@ -158,7 +158,7 @@
 				break;
 		}
 		
-		self.capturedImage = [UIImage imageWithCGImage:cgImage scale:2.0 orientation:imageOrient];
+		self.capturedImage = [UIImage imageWithCGImage:cgImage scale:1.0 orientation:imageOrient];
 		
 		CGImageRelease( cgImage );
 		NSLog(@"captured photo");
