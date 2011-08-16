@@ -7,7 +7,7 @@
 //
 
 #import "CameraCapturer.h"
-
+#import "SampleBufferHolder.h"
 
 @implementation CameraCapturer
 
@@ -33,6 +33,7 @@
 		orientationDetector.delegate = self;
 		[orientationDetector startReceivingUpdates];
 	
+		imageBufferArray = [[NSMutableArray alloc] init];
 		
 		
 	}
@@ -131,6 +132,30 @@
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer  fromConnection:(AVCaptureConnection *)connection
 {
 	
+	
+	if ( self.waitingForCapture ) {
+		
+		
+		NSTimeInterval myTime = [NSDate timeIntervalSinceReferenceDate];
+		NSTimeInterval howLongUntil = pendingCaptureTime - myTime;
+	
+		//if ( howLongUntil <= (1.0/30.0) && howLongUntil >= (-1.0/30.0) ) {
+		if ( howLongUntil <= (1.0/60.0) && howLongUntil >= (-1.0/60.0) ) {
+			
+			//NSLog(@"Capture Frame: %f" , howLongUntil);
+			SampleBufferHolder * _sampleHolder = [SampleBufferHolder sampleHolderFromCMBuffer:sampleBuffer];
+			_sampleHolder.timeMismatch = howLongUntil;
+			
+			[imageBufferArray addObject:_sampleHolder];
+		}
+		
+		if ( howLongUntil <= -(1.0/10.0) ) {
+			self.waitingForCapture = NO;
+			[self saveBestPhotoFromArray];
+		}
+	}
+	
+	/*
 	if ( self.waitingForCapture ) { 
 		
 		CGImageRef cgImage = [self imageFromSampleBuffer:sampleBuffer];
@@ -165,7 +190,74 @@
 		self.waitingForCapture = NO;
 		
 	}
+	*/
 	
+}
+
+-(void) saveBestPhotoFromArray {
+	
+	NSTimeInterval minMistmatch = 1000.0;
+	SampleBufferHolder * bestImage = nil;
+	
+	for (SampleBufferHolder * _sampleHolder in imageBufferArray ) {
+		if ( fabs(_sampleHolder.timeMismatch) < minMistmatch ) {
+			minMistmatch = fabs(_sampleHolder.timeMismatch);
+			bestImage = _sampleHolder;
+		}	
+	}
+	
+	NSLog(@"chose best image with mismatch: %f" , bestImage.timeMismatch );
+	CGImageRef cgImage = [self imageFromSavedBuffer:bestImage];
+	
+	UIDeviceOrientation o = [LLOrientationDetector deviceOrientation];
+	UIImageOrientation imageOrient = -1;
+	
+	switch (o) {
+		case UIDeviceOrientationPortrait:
+			imageOrient = UIImageOrientationRight;
+			break;
+		case UIDeviceOrientationPortraitUpsideDown:
+			imageOrient = UIImageOrientationLeft;
+			break;
+		case UIDeviceOrientationLandscapeLeft:
+			imageOrient = UIImageOrientationUp;
+			break;
+		case UIDeviceOrientationLandscapeRight:
+			imageOrient = UIImageOrientationDown;
+			break;
+		case UIDeviceOrientationUnknown:
+			imageOrient = UIImageOrientationRight;
+			break;
+		default:
+			break;
+	}
+	
+	self.capturedImage = [UIImage imageWithCGImage:cgImage scale:1.0 orientation:imageOrient];
+	
+	CGImageRelease( cgImage );
+	NSLog(@"captured photo");
+	self.waitingForCapture = NO;
+	
+	
+}	
+
+
+- (CGImageRef) imageFromSavedBuffer:(SampleBufferHolder*) sampleBufferHolder 
+{
+    
+    uint8_t *baseAddress = (uint8_t *)[sampleBufferHolder.bufferData bytes];
+    size_t bytesPerRow = sampleBufferHolder.bytesPerRow;
+    size_t width = sampleBufferHolder.width;
+    size_t height = sampleBufferHolder.height;
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB(); 
+	
+    CGContextRef newContext = CGBitmapContextCreate(baseAddress, width, height, 8, bytesPerRow, colorSpace, kCGBitmapByteOrder32Little | kCGImageAlphaPremultipliedFirst); 
+    CGImageRef newImage = CGBitmapContextCreateImage(newContext); 
+    CGContextRelease(newContext); 
+	
+    CGColorSpaceRelease(colorSpace); 
+	
+    return newImage;
 }
 
 - (CGImageRef) imageFromSampleBuffer:(CMSampleBufferRef) sampleBuffer // Create a CGImageRef from sample buffer data
@@ -188,6 +280,16 @@
     /* CVBufferRelease(imageBuffer); */  // do not call this!
 	
     return newImage;
+}
+
+-(void) capturePhotoAtTime:(NSTimeInterval)interval {
+	
+	[imageBufferArray removeAllObjects];
+	NSLog(@"taking photo...");
+	pendingCaptureTime = interval;
+	self.waitingForCapture = YES;
+	self.capturedImage = nil;
+	
 }
 
 -(void) capturePhoto {

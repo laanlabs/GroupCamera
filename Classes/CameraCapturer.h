@@ -24,11 +24,17 @@
 	LLOrientationDetector * orientationDetector;	
 	UIDeviceOrientation currentDeviceOrientation;
 	
+	NSTimeInterval pendingCaptureTime;
+	
+	NSMutableArray * imageBufferArray;
+	
 }
 
 @property (nonatomic, retain) AVCaptureVideoPreviewLayer * previewLayer;
 @property (readwrite) BOOL waitingForCapture;
 @property (retain) UIImage * capturedImage;
+
+-(void) capturePhotoAtTime:(NSTimeInterval)interval;
 
 -(void) beginCapturingCamera;
 -(void) stopCapturingCamera;

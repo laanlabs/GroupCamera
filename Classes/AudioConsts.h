@@ -7,8 +7,9 @@
  *
  */
 
-static double startingFreq = 17054.235;
-static double freqBinSize = 172.265625 * 2;
+//static double startingFreq = 17054.296875; // 99th bin
+static double startingFreq = 17915.625; // 104th bin 
+static double freqBinSize = 172.265625 * 2.0;
 static int numFreqBins = 10;
 // these choose random frequencies to map to ordered time digits 0-9 ... so transitions aren't right next to each other
 static int digitToFreqBinMap[10] = {0,6,3,9,1,7,2,5,8,4};

@@ -43,6 +43,9 @@ struct Opaque;
 	
 	AudioOscillator * mainOscillator;
 	
+	BOOL pendingClick;
+	NSTimeInterval pendingClickTime;
+	
 }
 
 
@@ -60,5 +63,6 @@ struct Opaque;
 
 -(void) setFrequency:(double)_freq;
 
+-(void) makeClickAtTime:(NSTimeInterval) interval;
 
 @end

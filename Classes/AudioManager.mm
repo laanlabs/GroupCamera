@@ -183,7 +183,34 @@ struct Opaque {
 	} else {
 		
 		memset(data_ptr_dst,0,numberOfFrames*sizeof(SInt32));
-		memset(data_ptr_dst2,0,numberOfFrames*sizeof(SInt32));
+		//memset(data_ptr_dst2,0,numberOfFrames*sizeof(SInt32));
+		
+		if ( pendingClick ) {
+			
+			NSTimeInterval myTime = [NSDate timeIntervalSinceReferenceDate];
+			NSTimeInterval howLongUntil = pendingClickTime - myTime;
+			if ( howLongUntil <= .005804988662131519 ) {
+				// 5.804988662131519
+				// since each buffer is 256 samples, then 5ms per buffer
+				int dt = 0;
+				if ( howLongUntil >= 0.0 ) {
+					dt = (howLongUntil/5.804988662131519)*248;
+				}
+				
+				frameBuffer[dt+0] = 2147480647;
+				frameBuffer[dt+1] = 2147480647;
+				frameBuffer[dt+2] = 2147480647;
+				frameBuffer[dt+3] = 0;
+				frameBuffer[dt+4] = 0;
+				frameBuffer[dt+5] = 0;
+				frameBuffer[dt+6] = -2147480647;
+				frameBuffer[dt+7] = -2147480647;
+				frameBuffer[dt+8] = -2147480647;
+				pendingClick = NO;
+			}
+		}
+		
+		memcpy(data_ptr_dst2, data_ptr_dst, numberOfFrames*sizeof(SInt32) );
 		
 	}
 	
@@ -464,6 +491,16 @@ struct Opaque {
 	
 	*digit = maxDigit;
 	*_count = maxCount;
+	
+}
+
+
+#pragma mark Debug 
+
+-(void) makeClickAtTime:(NSTimeInterval) interval {
+	
+	pendingClick = YES;
+	pendingClickTime = interval;
 	
 }
 

@@ -27,6 +27,7 @@
     [window addSubview:viewController.view];
     [window makeKeyAndVisible];
 	
+	[[UIApplication sharedApplication] setIdleTimerDisabled:YES];
 	
 	timeToTakePhoto = [NSDate timeIntervalSinceReferenceDate];
 	photoCountdownStarted = NO;
@@ -36,10 +37,6 @@
 	//NSLog(@"BEgin time: %f " , beginTime);
 	NTPSearchduration = 5.0;
 	isSyncingWithSound = YES;
-	
-	
-	
-	
 	
 	
 	audioManager = [[AudioManager alloc] init];
@@ -90,59 +87,14 @@
 	
 	//[NSTimer scheduledTimerWithTimeInterval:(.05) target:self selector:@selector(updateFrequency) userInfo:nil repeats:YES];
     
-<<<<<<< HEAD
+
 	// stop syncing time after 10 seconds...
 	[self performSelector:@selector(stopNetworkClock) withObject:nil afterDelay:5.0];
 	
-=======
-    
-
-    
-    
->>>>>>> 5efd45d5874ab385f0f86eb7f08d7ec7079dd695
     return YES;
 }
 
-//- (void) repeatingMethod:(NSTimer *) theTimer {
 
--(void) checkForPendingPhotoCapture {
-	
-    /*systemTime = [NSDate date];
-	networkTime = [[NetworkClock sharedNetworkClock] networkTime];
-    sysClockLabel.text = [NSString stringWithFormat:@"%@", systemTime];
-    netClockLabel.text = [NSString stringWithFormat:@"%@", networkTime];
-    differenceLabel.text = [NSString stringWithFormat:@"%5.3f", [networkTime timeIntervalSinceDate:systemTime]];
-    */
-	
-	//NSTimeInterval t = [networkTime timeIntervalSinceReferenceDate];
-	
-	NSTimeInterval t = [self getTheirNetworkInterval];
-	
-	NSTimeInterval diff = timeToTakePhoto - t;
-	
-	//if ( diff > (1/60.0) ) {
-	if ( diff > 0.0166 ) {
-		
-		if ( photoCountdownStarted == NO ) {
-			//window.backgroundColor = [UIColor grayColor];
-			countdownLabel.textColor = [UIColor redColor];
-			photoCountdownStarted = YES;
-		}
-		
-		countdownLabel.text = [NSString stringWithFormat:@"%3.1f",diff];
-		
-	} else {
-		
-		if ( photoCountdownStarted == YES ) {
-			[self takePhoto];
-			countdownLabel.text = @"";
-			photoCountdownStarted = NO;
-		}
-		
-	}
-	
-	
-}
 
 // 60 fps to update interface..  not needed for actual app
 
@@ -253,7 +205,11 @@
 		soundSyncAchieved = YES;
 		listenSwitch.on = NO;
 		audioManager.listenForSound = NO;
-		[self performSelectorOnMainThread:@selector(initCamera) withObject:nil waitUntilDone:NO];
+		
+		// only turn on camera if you're not the master..
+		if ( !audioManager.generateSound ) {
+			[self performSelectorOnMainThread:@selector(initCamera) withObject:nil waitUntilDone:NO];
+		}
 	}	
 	
 	
@@ -281,6 +237,51 @@
 	//cameraCapturer.previewLayer.frame = window.bounds;
 	cameraCapturer.previewLayer.frame = CGRectMake(0, 90, 320, 480);
 	[cameraCapturer beginCapturingCamera];
+	
+}
+
+
+//- (void) repeatingMethod:(NSTimer *) theTimer {
+
+-(void) checkForPendingPhotoCapture {
+	
+    /*systemTime = [NSDate date];
+	 networkTime = [[NetworkClock sharedNetworkClock] networkTime];
+	 sysClockLabel.text = [NSString stringWithFormat:@"%@", systemTime];
+	 netClockLabel.text = [NSString stringWithFormat:@"%@", networkTime];
+	 differenceLabel.text = [NSString stringWithFormat:@"%5.3f", [networkTime timeIntervalSinceDate:systemTime]];
+	 */
+	
+	//NSTimeInterval t = [networkTime timeIntervalSinceReferenceDate];
+	
+	NSTimeInterval t = [self getTheirNetworkInterval];
+	
+	NSTimeInterval diff = timeToTakePhoto - t;
+	
+	//if ( diff > (1/60.0) ) {
+	//if ( diff > 0.0166 ) {
+	if ( diff > 0.05 ) {
+		
+		if ( photoCountdownStarted == NO ) {
+			//window.backgroundColor = [UIColor grayColor];
+			countdownLabel.textColor = [UIColor redColor];
+			photoCountdownStarted = YES;
+		}
+		
+		countdownLabel.text = [NSString stringWithFormat:@"%3.1f",diff];
+		
+	} else {
+		
+		if ( photoCountdownStarted == YES ) {
+			
+			[self takePhoto];
+			countdownLabel.text = @"";
+			photoCountdownStarted = NO;
+			
+		}
+		
+	}
+	
 	
 }
 
@@ -315,11 +316,31 @@
 
 -(void) takePhoto {
 	
-	window.backgroundColor = [UIColor redColor];
-	[window performSelector:@selector(setBackgroundColor:) withObject:[UIColor whiteColor] afterDelay:0.3];
 	pendingFrameCapture = YES;
 	
-	[cameraCapturer capturePhoto];
+	//[cameraCapturer capturePhoto];
+	
+	
+	// my interval to take photo = 123.5
+	// shared net time: 129.8
+	// take photo at 130.0 net time
+	// take photo at 130.0 
+	
+	NSTimeInterval theirTime = [self getTheirNetworkInterval];
+	//NSTimeInterval myTime = [[NSDate date] timeIntervalSince1970];
+	NSTimeInterval myTime = [NSDate timeIntervalSinceReferenceDate];
+	
+	NSTimeInterval howLongUntilPhoto = timeToTakePhoto - theirTime;
+	NSTimeInterval timeToTakePhotoMyTime = myTime + howLongUntilPhoto;
+	
+	[audioManager makeClickAtTime:timeToTakePhotoMyTime];
+	
+	[cameraCapturer capturePhotoAtTime:timeToTakePhotoMyTime];
+	
+	//-- NSLog(@"make click in %f at my time: %f " , howLongUntilPhoto , timeToTakePhotoMyTime );
+	
+	window.backgroundColor = [UIColor redColor];
+	[window performSelector:@selector(setBackgroundColor:) withObject:[UIColor whiteColor] afterDelay:0.3];
 	
 	
 	[self performSelector:@selector(checkForImage) withObject:nil afterDelay:0.3];
@@ -410,6 +431,10 @@
 -(IBAction) talkSwitched {
 	
 	audioManager.generateSound = talkSwitch.on;
+	
+	if ( !audioManager.generateSound && soundSyncAchieved && cameraCapturer==nil) {
+		[self initCamera];
+	}
 
 }
 
